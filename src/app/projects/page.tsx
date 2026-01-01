@@ -2,7 +2,7 @@
 
 import Heading from "./components/heading";
 import Repos from "./components/repos";
-import Artworks from "./components/artworks";
+// Removed: import Artworks from "./components/artworks";
 
 export default function ProjectPage() {
   return (
