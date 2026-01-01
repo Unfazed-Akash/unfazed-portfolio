@@ -10,7 +10,7 @@ export default function ProjectPage() {
       <div className="fixed inset-0 w-full h-full bg-dot-black/40 dark:bg-dot-white/30 -z-10" />
       <Heading />
       <Repos />
-      <Artworks />
+      {/* <Artworks /> */}
     </div>
   );
 }

@@ -19,15 +19,12 @@ import {
   DjangoPlain,
 } from "devicons-react";
 import {
-  Code,
   Github,
   Linkedin,
   Twitter,
-  Instagram, // Keeping Instagram as placeholder or if he has one (he didn't provide, but I'll leave generic or remove)
-  Youtube, // Remove if not provided
-  Gamepad2, // For games/fun
-  Terminal, // For command line stuff
-  Cpu, // For AI/ML
+  Gamepad2,
+  Terminal,
+  Cpu,
   Globe,
 } from "lucide-react";
 

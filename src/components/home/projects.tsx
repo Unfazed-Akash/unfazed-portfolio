@@ -44,7 +44,7 @@ export default function Projects() {
   return (
     <Section
       className="flex items-center"
-      title="Stuff I'm Proud Of"
+      title="Karya (Projects)"
       blurInView={false}
     >
       <div className="flex flex-col gap-4 w-full">
