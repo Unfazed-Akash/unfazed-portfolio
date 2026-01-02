@@ -17,7 +17,7 @@ import Link from "next/link";
 import { RainbowButton } from "../ui/rainbow-button";
 
 const signatureFont = localFont({
-  src: "../../app/fonts/Signature.otf",
+  src: "../../app/fonts/signature.otf",
   variable: "--font-signature",
 });
 
