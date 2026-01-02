@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import {
   Code,
   FileIcon,
@@ -21,6 +23,7 @@ import dynamic from "next/dynamic";
 import { FollowerPointerCard } from "../ui/following-pointer";
 import { Button } from "../ui/button";
 import { useRouter } from "next/navigation";
+import { cn } from "@/lib/utils";
 
 export default function About() {
   const router = useRouter();
@@ -31,7 +34,7 @@ export default function About() {
       <BentoGrid className="w-full mx-auto md:grid-cols-8 grid-cols-2 md:grid-rows-12 md:h-[500px]">
         <BentoGridItem
           className="col-span-2 md:col-span-4 md:row-span-4 select-none"
-          hoverText="I live in Unnao, UP!"
+          hoverText="I live in Lucknow!"
           header="India"
           HeaderIcon={MapPin}
         >
@@ -131,7 +134,10 @@ const Technologies = () => {
           <motion.div className="transition-colors duration-200">
             <tech.icon
               size={42}
-              className="transition-all duration-200 md:grayscale hover:grayscale-0"
+              className={cn(
+                "transition-all duration-200 md:grayscale hover:grayscale-0",
+                tech.name === "Flask" && "dark:invert"
+              )}
             />
           </motion.div>
         </FollowerPointerCard>
@@ -142,11 +148,16 @@ const Technologies = () => {
 
 const FavoriteTool = () => {
   return (
-    <div className="grid place-items-center justify-center h-full overflow-hidden relative">
-      <VscodeOriginal
-        size={100}
-        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-      />
+    <div className="flex items-center justify-center w-full h-full">
+      <div className="relative w-10 h-10 md:w-10 md:h-10">
+        <Image
+          src="/vscode.png"
+          alt="VS Code"
+          fill
+          className="object-contain"
+          priority
+        />
+      </div>
     </div>
   );
 };

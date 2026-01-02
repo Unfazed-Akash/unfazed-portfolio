@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Projects",
+  title: "Projects | Akash Trivedi",
   description:
-    "Explore my portfolio of web and game development projects, including AoTTG 2, Who's That Pokémon?, and award-winning games like COVID: Armageddon.",
+    "Explore my portfolio of web and game development projects, including KAVACH, AAHARITHM, and more.",
   openGraph: {
-    title: "Projects | Glenn Jimenez",
+    title: "Projects | Akash Trivedi",
     description:
-      "Explore my portfolio of web and game development projects, including AoTTG 2, Who's That Pokémon?, and award-winning games like COVID: Armageddon.",
+      "Explore my portfolio of web and game development projects, including KAVACH, AAHARITHM, and more.",
   },
 };
 

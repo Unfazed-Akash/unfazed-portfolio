@@ -12,6 +12,11 @@ const { descriptions } = about();
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://unfazed-akash.vercel.app"),
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
   title: {
     default: "Akash Trivedi | Full-Stack Developer (Unfazed)",
     template: "%s | Akash Trivedi (Unfazed)",
@@ -45,7 +50,7 @@ export const metadata: Metadata = {
     siteName: "Akash Trivedi (Unfazed)",
     images: [
       {
-        url: "/thumb.webp", // detailed check needed later if image exists or needs replacement
+        url: "/thumb.webp",
         width: 1200,
         height: 630,
         alt: "Akash Trivedi - Full-Stack Developer",

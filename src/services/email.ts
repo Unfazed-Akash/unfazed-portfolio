@@ -4,14 +4,14 @@ interface EmailData {
   [key: string]: string;
   user_name: string;
   user_email: string;
-  user_subject: string;
+  title: string;
   message: string;
 }
 
 const emailConfig = {
-  serviceId: "service_ytcf4kr",
-  templateId: "template_jycn3xn",
-  publicKey: "psgeH9Sn3HF-ug0Wv",
+  serviceId: "service_z6jjf3p",
+  templateId: "template_ss0pjzo",
+  publicKey: "a81X-eTwlw3ehtJdW",
 };
 
 export const sendEmail = async (data: EmailData) => {

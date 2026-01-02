@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { projects, repositories } from "@/lib/data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://gisketch.com";
+  const baseUrl = "https://unfazed-akash.vercel.app";
 
   // Base routes
   const routes = ["", "/projects", "/resume"].map((route) => ({

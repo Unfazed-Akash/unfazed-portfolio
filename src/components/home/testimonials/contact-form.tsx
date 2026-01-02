@@ -6,6 +6,7 @@ import { Textarea } from "../../ui/textarea";
 import { User, Mail, Loader2 } from "lucide-react";
 import { useState } from "react";
 import { sendEmail } from "@/services/email";
+import Image from "next/image";
 
 export function ContactForm() {
   const [status, setStatus] = useState<string>("");
@@ -19,7 +20,7 @@ export function ContactForm() {
     const emailData = {
       user_name: formData.get("user_name") as string,
       user_email: formData.get("user_email") as string,
-      user_subject: "Website Contact",
+      title: "Website Contact",
       message: formData.get("message") as string,
     };
 
@@ -29,7 +30,7 @@ export function ContactForm() {
       setIsSubmitted(true);
     } catch (error) {
       console.error(error);
-      setStatus("Something went wrong :(");
+      setStatus("Error: Please check EmailJS config in services/email.ts");
     }
   };
 
@@ -41,11 +42,15 @@ export function ContactForm() {
   if (isSubmitted) {
     return (
       <div className="space-y-6 text-center py-4">
-        <h3 className="text-2xl font-semibold">Message in a Bottle! 🚀</h3>
-        <p className="text-muted-foreground">
-          Your message is now traveling through the digital waves. I&apos;ll get
-          back to you faster than you can say &quot;The game is afoot!&quot;
-        </p>
+        <h3 className="text-2xl font-semibold">S&apos;all Good, Man </h3>
+        <div className="relative w-full h-40">
+          <Image
+            src="/success.gif"
+            alt="Message Sent"
+            fill
+            className="object-contain"
+          />
+        </div>
         <Button onClick={handleReset} variant="outline" className="mt-4">
           Send Another Message?
         </Button>
@@ -62,7 +67,7 @@ export function ContactForm() {
           <Input
             id="name"
             name="user_name"
-            placeholder="Sherlock Holmes"
+            placeholder="I'm the cook Now. Say My Name"
             className="pl-9"
             required
           />
@@ -76,7 +81,7 @@ export function ContactForm() {
             id="email"
             name="user_email"
             type="email"
-            placeholder="sherlock@bakerstreet.com"
+            placeholder="You're_Hiesengberg@ww.com"
             className="pl-9"
             required
           />
@@ -88,7 +93,7 @@ export function ContactForm() {
         <Textarea
           id="message"
           name="message"
-          placeholder="Elementary, my dear Watson! I deduce you're in need of a web developer who can solve your digital mysteries..."
+          placeholder="Fact is, Walter White couldn't have done it without me!"
           className="min-h-[140px]"
           required
         />

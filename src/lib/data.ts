@@ -13,8 +13,8 @@ import {
   JavaOriginal,
   COriginal,
   MongodbOriginal,
-  MysqlOriginal,
-  ExpressOriginal,
+  CanvaOriginal,
+  PostgresqlOriginal,
   FlaskOriginal,
   DjangoPlain,
 } from "devicons-react";
@@ -72,12 +72,7 @@ export const technologies = {
       shortname: "CSS",
       yearStarted: 2019,
     },
-    sql: {
-      name: "SQL",
-      icon: MysqlOriginal, // Using MySQL for SQL generic
-      shortname: "SQL",
-      yearStarted: 2021,
-    },
+
   },
   frameworks: {
     react: {
@@ -98,12 +93,7 @@ export const technologies = {
       shortname: "Node",
       yearStarted: 2022,
     },
-    express: {
-      name: "Express.js",
-      icon: ExpressOriginal,
-      shortname: "Express",
-      yearStarted: 2022,
-    },
+
     flask: {
       name: "Flask",
       icon: FlaskOriginal,
@@ -128,11 +118,12 @@ export const technologies = {
       shortname: "Mongo",
       yearStarted: 2022,
     },
-    mysql: {
-      name: "MySQL",
-      icon: MysqlOriginal,
-      shortname: "MySQL",
-      yearStarted: 2021,
+
+    postgresql: {
+      name: "PostgreSQL",
+      icon: PostgresqlOriginal,
+      shortname: "Postgres",
+      yearStarted: 2023,
     },
   },
   tools: {
@@ -147,6 +138,12 @@ export const technologies = {
       icon: FigmaOriginal,
       shortname: "Figma",
       yearStarted: 2021,
+    },
+    canva: {
+      name: "Canva",
+      icon: CanvaOriginal,
+      shortname: "Canva",
+      yearStarted: 2024,
     },
   },
 };
@@ -286,7 +283,7 @@ export const about = () => {
     titles: ["Full Stack Developer", "AI/ML Enthusiast", "System Architect"],
     work: ["SIH'25 Finalist Team Lead", "Internshala Student Partner"],
     location: "Unnao, UP, India",
-    email: "Munfazedakash@gmail.com",
+    email: "unfazedakash@gmail.com",
     copyrightYear: currentYear,
     yearsOfExperience: calculateExperience(2021),
     preferredLanguage: technologies.languages.python,
@@ -348,7 +345,7 @@ const achievements = [
     subtitle: "Certified in AI Fundamentals",
     location: "Govt. of India & Intel",
     stack: ["AI", "ML"],
-    icon: Cpu,
+    img: "/resume/ai_for_all.webp",
     descriptions: [
       "Certified in AI fundamentals and real-world applications.",
     ],
@@ -360,7 +357,7 @@ const achievements = [
     subtitle: "Google for Developers",
     location: "Online",
     stack: ["Cloud", "DevTools"],
-    icon: Terminal,
+    img: "/resume/google's_skills_badge.webp",
     descriptions: [
       "Recognized for completing structured learning modules in developer tools and foundational cloud technologies.",
     ],

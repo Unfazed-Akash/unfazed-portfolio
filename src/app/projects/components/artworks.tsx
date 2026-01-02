@@ -112,7 +112,7 @@ export default function Artworks() {
         <Button
           size="sm"
           onClick={() =>
-            (window.location.href = "https://instagram.com/gisketch")
+            (window.location.href = "https://instagram.com/unfazed_akash")
           }
         >
           Follow me on Instagram

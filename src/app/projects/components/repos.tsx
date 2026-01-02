@@ -12,7 +12,7 @@ export default function Repos() {
         </h1>
         <Button
           size="sm"
-          onClick={() => (window.location.href = "https://github.com/gisketch")}
+          onClick={() => (window.location.href = "https://github.com/Unfazed-Akash")}
         >
           {" "}
           View GitHub

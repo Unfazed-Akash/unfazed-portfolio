@@ -1,6 +1,6 @@
 "use client";
 
-import { testimonials } from "@/lib/data";
+import { testimonials, about } from "@/lib/data";
 import Section from "../section";
 import { cn } from "@/lib/utils";
 import Markdown from "react-markdown";
@@ -69,7 +69,7 @@ export default function Testimonials() {
           <div className="absolute top-0 inset-x-0 h-20 bg-gradient-to-b from-background to-transparent" />
           <div className="absolute bottom-0 inset-x-0 h-40 bg-gradient-to-t from-background to-transparent" />
 
-          <FollowerPointerCard title="Munfazedakash@gmail.com" hideCursor>
+          <FollowerPointerCard title={about().email} hideCursor>
             <RainbowButton
               onClick={() => setOpen(true)}
               className="flex items-center gap-2"

@@ -43,7 +43,7 @@ export default function Overview() {
           </span>
           <span className="flex flex-row gap-2">
             <span className="text-terminal-ronin-yellow dark:text-terminal-carp-yellow">
-              gisketch
+              unfazed
             </span>
             <span className="text-terminal-crystal-blue dark:text-terminal-aqua1">
               ~/devfiles/portfolio

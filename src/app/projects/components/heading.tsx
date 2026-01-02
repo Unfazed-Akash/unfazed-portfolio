@@ -14,21 +14,21 @@ export default function Heading() {
       <div className="text-h2 font-bold sm:text-h1 md:text-h1-desktop text-foreground/75 dark:text-foreground/60">
         You&apos;ll find most of my code adventures on{" "}
         <LinkPreview
-          url="https://github.com/gisketch"
+          url="https://github.com/Unfazed-Akash"
           className="text-terminal-ronin-yellow"
         >
           GitHub
         </LinkPreview>
         . I share my artwork on{" "}
         <LinkPreview
-          url="https://instagram.com/gisketch"
+          url="https://instagram.com/unfazed_akash"
           className="text-terminal-sakura-pink"
         >
           Instagram
         </LinkPreview>
         , and occasionally post animations on{" "}
         <LinkPreview
-          url="https://youtube.com/@gisketch"
+          url="https://youtube.com/@unfazed_akash"
           className="text-terminal-peach-red"
         >
           YouTube

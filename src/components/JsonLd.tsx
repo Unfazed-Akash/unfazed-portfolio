@@ -14,13 +14,13 @@ export default function JsonLd() {
       "@type": "PostalAddress",
       addressCountry: location,
     },
-    url: "https://gisketch.com",
+    url: "https://unfazed-akash.vercel.app",
     sameAs: [
-      "https://github.com/gisketch",
-      "https://www.linkedin.com/in/ghegijmnz/",
-      "https://twitter.com/gisketch",
-      "https://www.instagram.com/gisketch",
-      "https://www.youtube.com/@gisketch",
+      "https://github.com/Unfazed-Akash",
+      "https://www.linkedin.com/in/unfazed-akash/",
+      "https://x.com/unfazed_akash",
+      "https://www.instagram.com/unfazed_akash",
+      "https://www.youtube.com/@unfazed_akash",
     ],
   };
 

@@ -24,23 +24,23 @@ export default function Globe({ width = 500, height = 500 }: GlobeProps) {
   });
 
   useEffect(() => {
-    const phi = 2;
+    const phi = 2.8;
 
     const globe = createGlobe(canvasRef.current!, {
       devicePixelRatio: 2,
       width: width * 2,
       height: height * 2,
       phi: phi,
-      theta: -0.25,
+      theta: 0.25,
       dark: theme === "dark" ? 1 : 0,
-      diffuse: 1.2,
+      diffuse: 2,
       scale: 1,
       mapSamples: 16000,
-      mapBrightness: 6,
+      mapBrightness: 12,
       baseColor: theme === "dark" ? [0.3, 0.3, 0.3] : [1, 1, 1],
       markerColor: [1, 0.3, 0.3],
       glowColor: theme === "dark" ? [0.2, 0.2, 0.2] : [1, 1, 1],
-      markers: [{ location: [7.0736, 125.611], size: 0.06 }],
+      markers: [{ location: [26.8467, 80.9462], size: 0.1 }],
       onRender: (state) => {
         state.phi = phi + spring.get();
         state.width = width * 2;

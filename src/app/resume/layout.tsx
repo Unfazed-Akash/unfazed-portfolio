@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Glenn's Resume",
+  title: "Resume | Akash Trivedi",
   description:
     "Explore my resume, including my skills, experience, and education.",
   openGraph: {
-    title: "Resume | Glenn Jimenez",
+    title: "Resume | Akash Trivedi",
     description:
       "Explore my resume, including my skills, experience, and education.",
   },
