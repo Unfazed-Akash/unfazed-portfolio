@@ -23,8 +23,6 @@ import {
   Linkedin,
   Twitter,
   Gamepad2,
-  Terminal,
-  Cpu,
   Globe,
 } from "lucide-react";
 

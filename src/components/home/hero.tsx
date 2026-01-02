@@ -16,9 +16,9 @@ import { RocketIcon, FileTextIcon } from "lucide-react";
 import Link from "next/link";
 import { RainbowButton } from "../ui/rainbow-button";
 
-const gisketchFont = localFont({
-  src: "../../app/fonts/Gisketch.otf",
-  variable: "--font-gisketch",
+const signatureFont = localFont({
+  src: "../../app/fonts/Signature.otf",
+  variable: "--font-signature",
 });
 
 const pillStyles = [
@@ -66,7 +66,7 @@ export default function Hero() {
                 <span>, aka{" "}</span>
                 <span
                   className={cn(
-                    gisketchFont.className,
+                    signatureFont.className,
                     "ml-2 font-light",
                     "text-terminal-oni-violet dark:text-terminal-ronin-yellow",
                     "px-8 mx-[-1.5rem]"

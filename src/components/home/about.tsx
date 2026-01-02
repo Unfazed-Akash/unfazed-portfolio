@@ -17,7 +17,7 @@ import Globe from "./about/globe";
 import { getRandomFunFact, socialMedia, technologies } from "@/lib/data";
 import { useEffect, useRef, useState } from "react";
 import { motion, useAnimationControls } from "framer-motion";
-import { PythonOriginal, VscodeOriginal } from "devicons-react";
+import { PythonOriginal } from "devicons-react";
 
 import dynamic from "next/dynamic";
 import { FollowerPointerCard } from "../ui/following-pointer";
