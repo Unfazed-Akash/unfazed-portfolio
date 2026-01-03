@@ -223,7 +223,7 @@ export const projects = [
     name: "Coming Soon",
     row: 1,
     type: "project",
-    img: "/projects/placeholder.webp",
+    img: "/projects/placeholder.png",
     subheading: "Exciting Project in Works",
     ctaLabel: "Wait for it",
     description:
@@ -237,7 +237,7 @@ export const projects = [
     name: "Coming Soon",
     row: 1,
     type: "project",
-    img: "/projects/placeholder.webp",
+    img: "/projects/placeholder.png",
     subheading: "Future Innovation",
     ctaLabel: "Wait for it",
     description:
