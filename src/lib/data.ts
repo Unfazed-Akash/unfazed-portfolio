@@ -219,34 +219,6 @@ export const projects = [
     liveDemo: "#",
     yearStarted: 2024,
   },
-    {
-    name: "Coming Soon",
-    row: 1,
-    type: "project",
-    img: "/projects/placeholder.png",
-    subheading: "Exciting Project in Works",
-    ctaLabel: "Wait for it",
-    description:
-      "A new innovative project is currently under development. Stay tuned for updates!",
-    technologies: [technologies.languages.typescript, technologies.frameworks.nextjs],
-    github: "https://github.com/Unfazed-Akash",
-    liveDemo: "#",
-    yearStarted: 2025,
-  },
-    {
-    name: "Coming Soon",
-    row: 1,
-    type: "project",
-    img: "/projects/placeholder.png",
-    subheading: "Future Innovation",
-    ctaLabel: "Wait for it",
-    description:
-      "Another groundbreaking idea coming to life soon. Watch this space!",
-    technologies: [technologies.languages.python, technologies.frameworks.django],
-    github: "https://github.com/Unfazed-Akash",
-    liveDemo: "#",
-    yearStarted: 2025,
-  },
 ];
 
 function getLearningsText(isMarkdown = false) {

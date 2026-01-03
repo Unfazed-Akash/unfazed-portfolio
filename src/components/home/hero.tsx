@@ -158,7 +158,7 @@ export default function Hero() {
           )}
         </div>
         <Terminal
-          className="backdrop-blur-none h-[360px] w-full visible md:invisible"
+          className="backdrop-blur-none h-[360px] w-full md:hidden"
           layoutId="mobile-terminal"
         >
           <pre className="whitespace-pre">{<Code />}</pre>
