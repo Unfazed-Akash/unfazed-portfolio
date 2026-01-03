@@ -13,9 +13,9 @@ const { descriptions } = about();
 export const metadata: Metadata = {
   metadataBase: new URL("https://unfazed-akash.vercel.app"),
   icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
+    icon: "/unfazed-new.ico",
+    shortcut: "/unfazed-new.ico",
+    apple: "/unfazed-new.ico",
   },
   title: {
     default: "Akash Trivedi | Full-Stack Developer (Unfazed)",
