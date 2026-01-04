@@ -28,12 +28,12 @@ export const AnimatedTooltip = ({
   const x = useMotionValue(0);
 
   const rotate = useSpring(
-    useTransform(x, [-100, 100], [-45, 45]),
+    useTransform(x, [-100, 100], [-45, 45], { clamp: true }),
     springConfig
   );
 
   const translateX = useSpring(
-    useTransform(x, [-100, 100], [-50, 50]),
+    useTransform(x, [-100, 100], [-50, 50], { clamp: true }),
     springConfig
   );
 
