@@ -25,23 +25,23 @@ const Code = () => {
         <span className={colors.base}>[</span>
         <div className="ml-4">
           <span className={colors.string}>
-            &quot;Showcase my projects&quot;
+            &quot;Showcase my projects :-> Cinematography&quot;
           </span>
           ,
           <br />
-          <span className={colors.string}>&quot;Display my skills&quot;</span>,
+          <span className={colors.string}>&quot;Display my skills :-> Visual Effects (VFX)&quot;</span>,
           <br />
           <span className={colors.string}>
-            &quot;Connect with other devs&quot;
+            &quot;Connect with other devs :-> Green Room&quot;
           </span>
           ,
           <br />
           <span className={colors.string}>
-            &quot;Find opportunities in tech&quot;
+            &quot;Find opportunities in tech :-> Greenlight&quot;
           </span>
           ,
           <br />
-          <span className={colors.string}>&quot;Share my journey&quot;</span>
+          <span className={colors.string}>&quot;Share my journey :-> Behind the Scenes&quot;</span>
         </div>
         <span className={colors.base}>];</span>
       </div>
