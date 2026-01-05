@@ -29,7 +29,7 @@ const Code = () => {
           </span>
           ,
           <br />
-          <span className={colors.string}>&quot;Display my skills :-> Visual Effects (VFX)&quot;</span>,
+          <span className={colors.string}>&quot;Display my skills - Visual Effects (VFX)&quot;</span>,
           <br />
           <span className={colors.string}>
             &quot;Connect with other devs - Green Room&quot;
