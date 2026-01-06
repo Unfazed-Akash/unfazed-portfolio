@@ -35,14 +35,7 @@ export const ArtworkModal = () => {
             alt="artwork"
             className="max-h-[85vh] w-auto max-w-[90vw] object-contain rounded-lg"
           />
-          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-6">
-            <h2 className="text-2xl font-bold text-white mb-2">
-              {(artwork.content as any).props.title}
-            </h2>
-            <p className="text-neutral-200">
-              {(artwork.content as any).props.description}
-            </p>
-          </div>
+          {artwork.content}
         </motion.div>
       </motion.div>
     </motion.div>

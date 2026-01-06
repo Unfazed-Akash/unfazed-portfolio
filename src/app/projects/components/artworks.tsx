@@ -6,16 +6,23 @@ import { ArtworkModal } from "./artworks/artwork-modal";
 
 const ArtDescription = ({
   title,
-  description,
+  quote,
+  context,
 }: {
   title: string;
-  description: string;
+  quote: string;
+  context: string;
 }) => {
   return (
-    <div>
-      <p className="font-bold md:text-4xl text-xl text-white">{title}</p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        {description}
+    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/95 via-black/70 to-transparent p-6 md:p-8 backdrop-blur-[2px]">
+      <h2 className="text-3xl md:text-4xl font-bold text-white mb-2 tracking-tight">
+        {title}
+      </h2>
+      <blockquote className="text-lg md:text-xl italic text-gray-300 mb-4 border-l-4 border-purple-500 pl-4">
+        &quot;{quote}&quot;
+      </blockquote>
+      <p className="font-normal text-sm md:text-base text-gray-200 leading-relaxed max-w-prose">
+        {context}
       </p>
     </div>
   );
@@ -26,79 +33,49 @@ const artworks = [
     id: 1,
     content: (
       <ArtDescription
-        title="Mikasa and Eren"
-        description="My depiction of the final scene of Mikasa and Eren."
+        title="Loyalty Over Everything"
+        quote="A man who doesn't spend time with his family can never be a real man."
+        context="The Godfather explores how power without principle corrupts, but power with family loyalty creates legacy. Vito Corleone built an empire not through ruthlessness alone, but through protecting those who couldn't protect themselves. The film shows that true strength is protecting what matters, not just accumulating power."
       />
     ),
-    className: "md:col-span-7 md:row-span-2",
-    thumbnail: "/art/6.webp",
-  },
-  {
-    id: 4,
-    content: (
-      <ArtDescription
-        title="Jiji"
-        description="Me practicing my digital painting skills. Decided to paint someone very special to me."
-      />
-    ),
-    className: "md:col-span-4 md:row-span-3",
-    thumbnail: "/art/4.webp",
-  },
-  {
-    id: 2,
-    content: (
-      <ArtDescription
-        title="Breath of the Wild Landscape"
-        description="I love BotW so much! This is my version of the promotional image of BotW in flat style."
-      />
-    ),
-    className: "md:col-span-4 md:row-span-1",
-    thumbnail: "/art/2.webp",
-  },
-  {
-    id: 5,
-    content: (
-      <ArtDescription
-        title="Stylized Portrait"
-        description="Testing the waters with artstyle. I love the colors as well as the linework here."
-      />
-    ),
-    className: "md:col-span-3 md:row-span-1",
-    thumbnail: "/art/5.webp",
-  },
-  {
-    id: 7,
-    content: (
-      <ArtDescription
-        title="Makima"
-        description="My favorite character in Chainsaw Man!"
-      />
-    ),
-    className: "md:col-span-5 md:row-span-4",
-    thumbnail: "/art/7.webp",
-  },
-
-  {
-    id: 6,
-    content: (
-      <ArtDescription
-        title="Zelda and Link"
-        description="Such an emotional scene in BotW. Left an impact on me that I decided to make a fanart for it. This received 20k upvotes in reddit."
-      />
-    ),
-    className: "md:col-span-6 md:row-span-2",
+    className: "md:col-span-5 md:row-span-3",
     thumbnail: "/art/1.webp",
   },
   {
     id: 3,
     content: (
       <ArtDescription
-        title="Cozy Me"
-        description="Me with my dog in my room."
+        title="Own Your Truth"
+        quote="What is it you truly desire?"
+        context="Lucifer examines the masks we wear versus our authentic selves. The throne represents self-acceptance—not hiding from your nature but owning it responsibly. Throughout six seasons, the show explores how vulnerability is strength, and running from yourself causes more damage than any external force."
       />
     ),
-    className: "md:col-span-6 md:row-span-2",
+    className: "md:col-span-6 md:row-span-3",
     thumbnail: "/art/3.webp",
+  },
+  {
+    id: 2,
+    content: (
+      <ArtDescription
+        title="One Choice Changes Everything"
+        quote="I am not in danger. I am the danger."
+        context="Walter White's transformation from teacher to kingpin shows how desperation and untapped potential can corrupt or liberate. The series reveals that pride—not money—drives most destruction. The desert represents the moral wasteland between who we are and who we become when pushed to our limits."
+      />
+    ),
+    className: "md:col-span-11 md:row-span-3",
+    thumbnail: "/art/2.webp",
+  },
+  {
+    id: 4,
+    content: (
+      <ArtDescription
+        title="Truth Sets You Free, But First It Destroys You"
+        quote="Nothing is more beautiful than to know everything."
+        context="This devastating film follows twins uncovering their mother's wartime past. It shows how cycles of violence perpetuate through silence, and only brutal honesty—however painful—breaks them. The stencil aesthetic mirrors how trauma leaves permanent marks. Truth isn't comfortable, but living in lies is worse."
+      />
+    ),
+    className: "md:col-span-6 md:row-span-3",
+    thumbnail: "/art/4.webp",
   },
 ];
 

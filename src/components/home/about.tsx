@@ -27,7 +27,13 @@ import { cn } from "@/lib/utils";
 
 export default function About() {
   const router = useRouter();
-  const [currentFunFact, setCurrentFunFact] = useState(getRandomFunFact(""));
+  // Fix: Use deterministic initial state to prevent hydration mismatch
+  const [currentFunFact, setCurrentFunFact] = useState("I was a team lead for Smart India Hackathon 2025 Finalist team.");
+
+  useEffect(() => {
+    // Randomize on client-side only
+    setCurrentFunFact(getRandomFunFact(""));
+  }, []);
 
   return (
     <Section className="flex items-center" title="Bits & Pieces of Me">

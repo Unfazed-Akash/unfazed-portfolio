@@ -538,4 +538,22 @@ export const repositories = [
     owner: "Unfazed-Akash",
     repo: "Netflix-Clone",
   },
+  {
+    name: "DABRIS",
+    language: "Python",
+    description: "AI Data Analysis Chat-bot enabling non-technical users to perform data analysis.",
+    url: "https://github.com/Unfazed-Akash/DABRIS",
+    demo: "https://dabris.onrender.com/",
+    owner: "Unfazed-Akash",
+    repo: "DABRIS",
+  },
+  {
+    name: "Portfolio",
+    language: "Next.js",
+    description: "My personal portfolio website showcasing my projects and skills.",
+    url: "https://github.com/Unfazed-Akash/current_portfolio",
+    demo: "https://current-portfolio-akash.vercel.app/",
+    owner: "Unfazed-Akash",
+    repo: "current_portfolio",
+  },
 ];
