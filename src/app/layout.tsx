@@ -7,6 +7,7 @@ import { CommandMenu } from "@/components/command-palette";
 import { about } from "@/lib/data";
 import JsonLd from "@/components/JsonLd";
 import { Footer } from "@/components/home/footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const { descriptions } = about();
 
@@ -109,6 +110,7 @@ export default function RootLayout({
             <Footer />
           </main>
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
