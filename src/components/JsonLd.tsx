@@ -14,7 +14,7 @@ export default function JsonLd() {
       "@type": "PostalAddress",
       addressCountry: location,
     },
-    url: "https://unfazed-akash.vercel.app",
+    url: "https://unfazed-portfolio.vercel.app",
     sameAs: [
       "https://github.com/Unfazed-Akash",
       "https://www.linkedin.com/in/unfazed-akash/",

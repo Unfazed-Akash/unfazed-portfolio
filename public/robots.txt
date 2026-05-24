@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://unfazed-akash.vercel.app/sitemap.xml 
+Sitemap: https://unfazed-portfolio.vercel.app/sitemap.xml

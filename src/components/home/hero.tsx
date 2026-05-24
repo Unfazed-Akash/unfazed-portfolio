@@ -55,10 +55,28 @@ export default function Hero() {
       blurInView={false}
     >
       <div className="mt-12 sm:mt-24 flex flex-col">
-        <div className="text-h3 leading-5 sm:text-h1 md:text-[2.75rem] font-extrabold lg:text-hero mb-4 text-foreground">
+        <div className="text-h3 leading-snug sm:text-h1 md:text-[2.75rem] font-extrabold lg:text-hero mb-4 text-foreground">
           <div className="flex flex-row select-none">
             <div className="flex flex-col flex-1">
-              <span className="whitespace-nowrap">
+              {/* Mobile Layout */}
+              <div className="flex flex-wrap items-baseline gap-x-2 md:hidden">
+                <span>I&apos;m</span>
+                <span className="text-terminal-oni-violet dark:text-terminal-ronin-yellow">
+                  {realName}
+                </span>
+                <span>, aka</span>
+                <span
+                  className={cn(
+                    signatureFont.className,
+                    "text-terminal-oni-violet dark:text-terminal-ronin-yellow",
+                    "text-[1.3em] font-light leading-none align-middle px-2"
+                  )}
+                >
+                  {nickname}
+                </span>
+              </div>
+              {/* Desktop Layout */}
+              <div className="hidden md:block whitespace-nowrap">
                 I&apos;m{" "}
                 <span className="text-terminal-oni-violet dark:text-terminal-ronin-yellow">
                   {realName}
@@ -74,7 +92,7 @@ export default function Hero() {
                 >
                   {nickname}
                 </span>
-              </span>
+              </div>
               <span className="whitespace-nowrap">
                 a
                 <FlipWords

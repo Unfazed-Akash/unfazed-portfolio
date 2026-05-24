@@ -39,7 +39,7 @@ export default function About() {
     <Section className="flex items-center" title="Bits & Pieces of Me">
       <BentoGrid className="w-full mx-auto md:grid-cols-8 grid-cols-2 md:grid-rows-12 md:h-[500px]">
         <BentoGridItem
-          className="col-span-2 md:col-span-4 md:row-span-4 select-none"
+          className="col-span-2 md:col-span-4 md:row-span-4 select-none overflow-hidden"
           hoverText="I live in Lucknow!"
           header="India"
           HeaderIcon={MapPin}
@@ -100,7 +100,7 @@ export default function About() {
 
 const Location = () => {
   return (
-    <div className="absolute left-[20%] bottom-[-80%] md:bottom-[-120%] cursor-none">
+    <div className="absolute left-[50%] md:left-[20%] ml-[-170px] md:ml-0 bottom-[-45%] md:bottom-[-120%] cursor-none w-[340px] h-[340px] md:w-[400px] md:h-[400px] aspect-square">
       <Globe width={400} height={400} />
     </div>
   );

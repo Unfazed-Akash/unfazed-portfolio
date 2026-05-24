@@ -68,11 +68,9 @@ export default function Globe({ width = 500, height = 500 }: GlobeProps) {
   return (
     <canvas
       ref={canvasRef}
+      className="w-full h-full aspect-square"
       style={{
-        width: width,
-        height: height,
         cursor: "none",
-        contain: "layout paint size",
       }}
       onPointerDown={(e) => {
         pointerInteracting.current =

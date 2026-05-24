@@ -12,7 +12,7 @@ import { Analytics } from "@vercel/analytics/next";
 const { descriptions } = about();
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://unfazed-akash.vercel.app"),
+  metadataBase: new URL("https://unfazed-portfolio.vercel.app"),
   icons: {
     icon: "/unfazed-new.ico",
     shortcut: "/unfazed-new.ico",
@@ -38,14 +38,14 @@ export const metadata: Metadata = {
     "India",
   ],
   alternates: {
-    canonical: "https://unfazed-akash.vercel.app",
+    canonical: "https://unfazed-portfolio.vercel.app",
   },
-  authors: [{ name: "Akash Trivedi", url: "https://unfazed-akash.vercel.app" }],
+  authors: [{ name: "Akash Trivedi", url: "https://unfazed-portfolio.vercel.app" }],
   creator: "Akash Trivedi",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://unfazed-akash.vercel.app",
+    url: "https://unfazed-portfolio.vercel.app",
     title: "Akash Trivedi | Full-Stack Developer (Unfazed)",
     description: descriptions[0].replaceAll("*", ""),
     siteName: "Akash Trivedi (Unfazed)",
@@ -105,7 +105,7 @@ export default function RootLayout({
         <Providers>
           <Navbar />
           <CommandMenu />
-          <main className="w-full max-w-[1024px] mx-auto px-4">
+          <main className="w-full max-w-[1024px] mx-auto px-4 overflow-x-hidden">
             {children}
             <Footer />
           </main>
