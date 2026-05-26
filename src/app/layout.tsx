@@ -42,6 +42,9 @@ export const metadata: Metadata = {
   },
   authors: [{ name: "Akash Trivedi", url: "https://unfazed-portfolio.vercel.app" }],
   creator: "Akash Trivedi",
+  verification: {
+    google: "5xYexi0-Yl5Eug75ygwkKGUNpJqoU6JKNGl2i7TTiso",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
