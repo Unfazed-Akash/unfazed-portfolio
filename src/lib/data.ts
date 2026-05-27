@@ -247,7 +247,7 @@ export const about = () => {
     nickname: "Unfazed",
     hobbies: ["Coding", "Musician", "Cinephile", "Tech Enthusiast"],
     descriptions: [
-      `I'm **Akash Trivedi** (aka **Unfazed**), a passionate Computer Science student and Full Stack Developer. I love building systems that solve real-world problems, from **AI-powered analytics** to **responsive web applications**.`,
+      "I'm **Akash Trivedi** (aka **Unfazed**), a **Software Engineer** building scalable full-stack applications and intelligent agentic systems.",
       `Always learning something new; currently exploring ${getLearningsText(true)}. I believe in the power of code to impact lives and am constantly pushing my boundaries in **AI/ML** and **System Architecture**.`,
     ],
     titles: ["Full Stack Developer", "AI/ML Enthusiast", "System Architect"],
